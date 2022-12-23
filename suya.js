@@ -1,5 +1,5 @@
 function index(params) {
   return params;
 }
-asdfsdfasdfsafxvhsjkfh;
-sadhsflhsafsf asdfsdfsdfsafsaf
+
+console.log(index("isman"));
