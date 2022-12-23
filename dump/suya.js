@@ -3,4 +3,7 @@ function index(params) {
 }
 
 console.log(index("isman"));
-asdsad;
+console.log(index("isman"));
+console.log(index("isman"));
+console.log(index("isman"));
+console.log(index("isman"));
