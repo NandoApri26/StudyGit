@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pala licin smiriwing</title>
+</head>
+<body>
+
+    <section>
+
+        <h1>Ayam kristod</h1>
+
+        
+        function run($uang, $jmlPaha, $jmlDada) {
+            //ayam krispi harga paha
+            $paha = 5000;
+            //ayam krispi harga dada
+            $dada = 6000;
+            //kembalian kalo uang itu lebih
+            $kembalian = 0;
+        
+            //step 1
+            //pengkondisian jika uang >= harga paha dan jika jmlhpaha >0
+            if ($uang >= $paha && $jmlPaha > 0)
+            {
+        
+                //kembalian = 0
+                // $kembalian = 0;
+        
+                //step 2 pengkondisian jika uang >= jmlh paha*harga paha
+                if ($uang >= $jmlPaha * $paha)
+                {
+                    //step 3
+                    //kalo iya maka kembalian = uang - ( jumalh paha * harga paha)
+                    $kembalian = $uang - ($jmlPaha * $paha);
+        
+                    //maka keluarkan kembalian dari hasil jumlah
+                    // return $kembalian;
+        
+                    //step 4
+                    //jika jumlah dada > 0 dan kembalian >= harga dada
+                    if ($jmlDada > 0 && $kembalian >= $dada)
+                    {
+                        //step 5
+                        //jka kembalian >=jumlahdada*hargadada
+                        if ($kembalian >= $jmlDada * $dada)
+                        {
+                            //step 6
+                            //kembalian = kembalian - jumlahdada* hargadada
+                            $kembalian = $kembalian - $jmlDada * $dada;
+        
+                            //kembalian = kembalian % harga dada
+                            // $kembalian = $kembalian % $dada;
+        
+                            //kembalian modulus = harga dada
+                            // $kembalian % = $dada;
+        
+                            //maka keluarkan kembalian dari hasil jumlah
+                            // return $kembalian;
+                        }
+        
+                          //step 5, jika tidak maka
+                    else 
+                    {
+                        //kembalian = kembalian % harga dada
+                        $kembalian = $kembalian % $dada;
+        
+                        //maka keluarkan kembalian dari hasil jumlah
+                        // return $kembalian;
+                    }
+                    
+                    }
+                  
+                }
+                //step 1, jika tidak maka
+                else
+                {
+                    //kembalian = uang modulus harga paha
+                    $kembalian = $uang % $paha;
+                }
+            }
+        
+            //kembalian
+            // $kembalian;
+        
+            return $kembalian;
+        }
+
+    </section>
+    
+</body>
+</html>
